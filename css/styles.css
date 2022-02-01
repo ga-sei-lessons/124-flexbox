@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+  font-size: 4rem;
+}
+
+.half-screen {
+  background-color: hotpink;
+  height: 50vh;
+}
+
+.flex-center {
+  /* flex is a display property */
+  display: flex;
+  /* center vertially */
+  align-items: center;
+  /* center horizontally  */
+  justify-content: center;
+}
+
+.square {
+  background-color: turquoise;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: lawngreen solid 5px;
+}
+
+/* look good on a small device */
+@media (max-width: 1000px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  /* body {
+    background-color: tomato;
+  } */
+}
